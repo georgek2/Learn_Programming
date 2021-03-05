@@ -71,10 +71,45 @@ def even_int(list):
 
     return count
 
-print(even_int([1, 3, 5, 7, 8]))
+# print(even_int([1, 3, 5, 7, 8]))
 
+import random
 
+choices = ['rock', 'paper', 'scissors']
 
+player = input('Enter selection: ')
+comp = random.choice(choices)
+
+if player == 'rock':
+    if comp == 'scissors':
+        print('The player won..<<')
+        print(comp)
+    elif comp == 'paper':
+        print('The Comp won..>>')
+        print(comp)
+    else:
+        print('Its a Tie...<<')
+        print(comp)
+elif player == 'scissors':
+    if comp == 'paper':
+        print('The player won..<<')
+        print(comp)
+    elif comp == 'rock':
+        print('The Comp won..>>')
+        print(comp)
+    else:
+        print('Its a Tie...^^')
+        print(comp)
+else:
+    if comp == 'rock':
+        print('Player won..<<')
+        print(comp)
+    elif comp == 'scissors':
+        print('Comp won..>>')
+        print(comp)
+    else: 
+        print('Its a Tie..^^')
+        print(comp)
 
 
 
