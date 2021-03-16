@@ -82,11 +82,10 @@ import random
 
 choices = ['rock', 'paper', 'scissors']
 
-game_on = True
 rounds = 5
 count = 0
 
-while game_on and rounds > 0:
+while rounds > 0:
     player = input('Enter selection: ')
     comp = random.choice(choices)
     new_round = True
